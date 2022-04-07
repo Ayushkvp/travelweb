@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Pacifico", cursive; */
+  font-family: "Exo 2", sans-serif;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(10, 240, 133),
+    rgb(70, 206, 224),
+    rgb(3, 112, 185)
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  /* display: flex; */
+  width: 90vw;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 5vh 5vw;
+  height: 70vh;
+  overflow: overlay;
+  box-shadow: 3px 3px 10px;
+  padding: 2% 3%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.17) url("scene.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.form-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: rgb(255, 248, 248);
+  font-size: 18px;
+}
+
+.input {
+  height: 22px;
+  width: 250px;
+  transition: all 0.5s;
+  background-color: transparent;
+  border: 2px solid black;
+  color: white;
+}
+
+.input:hover {
+  background-color: rgba(0, 0, 0, 0.692);
+  border: 2px solid white;
+}
+
+.form-content p {
+  font-size: 23px;
+}
+.form {
+  margin: 14px 10px;
+}
+
+.submsg {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn button {
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+}
+.btn button:hover {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px aqua;
+}
+
+h1 {
+  transition: all 1s;
+}
+h1:hover {
+  font-size: 35px;
+}
+
+.aink{
+  text-decoration: none;
+}

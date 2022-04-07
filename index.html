@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Pacifico&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* font-family: "Pacifico", cursive; */
+      font-family: "Exo 2", sans-serif;
+      background-image: linear-gradient(
+        to bottom right,
+        rgb(10, 240, 133),
+        rgb(70, 206, 224),
+        rgb(3, 112, 185)
+      );
+      background-repeat: no-repeat;
+      height: 100vh;
+      justify-content: center;
+      background-size: cover;
+    }
+
+    .navbar {
+      background-color: black;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .nav-list li {
+      list-style: none;
+      display: inline-block;
+      padding: 6px 20px;
+    }
+
+    .nav-list {
+    }
+    .nav-list li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 23px;
+      padding: 10px 10px;
+    }
+
+    p {
+      padding: 10px 10px;
+      text-align: justify;
+    }
+
+    article {
+      width: 40%;
+      height: 40%;
+      animation-name: images;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-left: 30%;
+      margin-right: 30%;
+      /* box-sizing: border-box; */
+    }
+
+    @keyframes images {
+      0% {
+        background: url("scene.webp");
+        background-size: cover;
+      }
+      25% {
+        background: url("scene2.webp");
+        background-size: cover;
+      }
+      50% {
+        background: url("scene3.jpg");
+        background-size: cover;
+      }
+      70% {
+        background: url("scene4.jpg");
+        background-size: cover;
+      }
+      100% {
+        background: url("scene.webp");
+        background-size: cover;
+      }
+    }
+    /* 
+    @media (max-width: 1080px) {
+      article {
+        height: 40%;
+        width: 50%;
+        margin: 5% 25%;
+      }
+    }
+
+    @media (max-width: 733px) {
+      article {
+        height: 40%;
+        width: 56%;
+        margin: 5% 22%;
+      }
+    }
+    @media (max-width: 618px) {
+      article {
+        height: 30%;
+        width: 56%;
+        margin: 5% 22%;
+      }
+    }
+    @media (max-width: 527px) {
+      article {
+        height: 20%;
+        width: 56%;
+        margin: 5% 22%;
+      }
+    } */
+  </style>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="form.html">Travels</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Welcome to Samhita Travels</h1>
+      <p>We arrange trips to Manipur</p>
+      <p>
+        Manipur is great place. Manipur is a state in Northeast India, with the
+        city of Imphal as its capital. It is bounded by the Indian states of
+        Nagaland to the north, Mizoram to the south and Assam to the west. It
+        also borders two regions of Myanmar, Sagaing Region to the east and Chin
+        State to the south.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        dolores, excepturi ad accusantium natus tempora nisi aut distinctio
+        facilis! Autem.
+      </p>
+      <p>
+        If you want to go to Manipur please fill the form
+        <a href="form.html">here</a>; We will contact you soon.
+      </p>
+    </section>
+    <article></article>
+  </body>
+</html>

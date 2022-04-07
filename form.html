@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Pacifico&display=swap");
+    </style>
+    <title>Manipur trip</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Samhita travels</h1>
+    </header>
+    <section>
+      <div class="form-content">
+        <p>Enter your details for the Manipur trip</p>
+        <form action="index.php" method="post">
+          <div class="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your name"
+              class="input"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              class="input"
+              placeholder="Enter your age"
+            />
+          </div>
+          <div class="form">
+            Male:<input type="radio" name="gender" id="gender-m" value="male"/>
+            Female:<input type="radio" name="gender" id="gender-f" value="female"/>
+          </div>
+          <div class="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your email"
+              class="input"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="Enter phone.no"
+              class="input"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="address"
+              name="address"
+              id="address"
+              placeholder="Enter your address"
+              class="input"
+            />
+          </div>
+          <div class="form">
+            <textarea
+              name="info"
+              id="info"
+              cols="30"
+              rows="10"
+              placeholder="Enter any information"
+              class="input"
+            ></textarea>
+          </div>
+          <div class="form">
+            Select your mode of transport:
+            <select name="mode_of_transport" id="transportmode">
+              <option value="road">By road</option>
+              <option value="rail">By rail</option>
+              <option value="flight">By plane</option>
+            </select>
+          </div>
+          <div class="form btn">
+            <button type="reset">Reset</button>
+          </div>
+          <div class="form btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="submsg">
+      <p>Thanks for submitting the form</p>
+    </footer>
+    <script>
+      // alert("Note! This is just a test website. No information is real.");
+    </script>
+  </body>
+</html>

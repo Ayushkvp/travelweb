@@ -1,0 +1,33 @@
+
+
+$insert = false;
+if (isset($_Post['name'])){
+    $server = "localhost";
+    $username = "root";
+    $password= "";
+
+    $con = mysqli_connect($server, $username, $password);
+    if(!$con) {
+        die("connection to this database failed due to ". mysqli_connect_error());
+    }
+
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $genderm = $_POST['genderm'];
+    $genderf = $_POST['genderf'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $info = $_POST['info'];
+
+    $sql = "INSERT INTO `proper trip form`.`trip` (`name`, `age`, `genderm`, `genderf`, `email`, `phone`, `address`, `info`) VALUES ('$name', '$age', '$genderm', '$genderf', '$email', '$phone', '$address', '$info')";
+    echo $sql;
+
+    if ($con->query($sql) == true) {
+        $insert = true;
+    }
+    else {
+        echo "Error: $sql <br> $con->error";
+    }
+    $con->close();
+    }
